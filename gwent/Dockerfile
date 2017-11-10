@@ -15,7 +15,7 @@ COPY start.sh start.sh
 # RUN sed -i "s/_DIR_/${DIR}/" start.sh
 
 EXPOSE ${WEBSERVER_PORT}/tcp ${WEBSOCKET_PORT}/tcp
-ENTRYPOINT ["bash", "./start.sh"]
+ENTRYPOINT ["bash", "start.sh"]
 CMD [ \
 	"--bind", "0.0.0.0", \
 	"--webserver", "${WEBSERVER_PORT}", \

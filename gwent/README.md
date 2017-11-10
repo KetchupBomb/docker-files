@@ -34,4 +34,6 @@ You can, however, override desired settings:
 $ docker run -it --rm -p 88:88 -p 99:99 ketchupbomb/gwent --webserver 88 --websocket 99
 ```
 
+> Just make sure that the exposed `-p`orts match the arguments (`--webserver` and `--websocket`)
+
 [not-gwent-online]: https://github.com/exane/not-gwent-online
